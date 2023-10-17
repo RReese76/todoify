@@ -19,8 +19,8 @@ function App() {
             </p>
             <AddItem />
             <ul>
-                {items.map((item, index) => (
-                    <ListItem key={item.id || index} item={item} />
+                {items.map((item) => (
+                    <ListItem key={item.id} item={item} />
                 ))}
             </ul>
         </div>

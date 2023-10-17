@@ -34,8 +34,15 @@ const todoSlice = createSlice({
         localStorage.setItem('todoItems', JSON.stringify(state));
       }
     },
+    updateItemText: (state, action) => {
+      const item = state.find((item) => item.id === action.payload.id);
+      if (item) {
+        item.text = action.payload.text;
+        localStorage.setItem('todoItems', JSON.stringify(state)); // Update localStorage
+      }
+    }
   },
 });
 
-export const { addItem, removeItem, toggleComplete } = todoSlice.actions;
+export const { addItem, removeItem, toggleComplete, updateItemText } = todoSlice.actions;
 export default todoSlice.reducer;

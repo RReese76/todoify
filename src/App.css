@@ -1,3 +1,9 @@
+.todo-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
 .todo-item {
     display: flex;
     align-items: center;
@@ -9,48 +15,24 @@
     transition: background-color 0.2s ease;
 }
 
-.todo-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
 .todo-item:hover {
     background-color: #e8e8e8;
 }
 
-.remove-item {
-    background-color: transparent;
-    border: 2px solid #6c6c6c;
-    border-radius: 50%;
-    font-size: 16px;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+.todo-item.completed .completion-details {
+    color: #6c6c6c;
+    font-style: italic;
+    margin-left: auto;
+    padding-right: 5px;
+}
+
+.todo-item.completed {
+    color: #6c6c6c;
 }
 
 .add-todo-button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
-}
-
-.checkmark-button:hover {
-    background-color: #45a049;
-    color: #fff;
-}
-
-.remove-item:hover {
-    background-color: #f44336;
-    color: #fff;
-}
-
-.item-text {
-    padding-left: 8px;
-    color: #000;
 }
 
 .add-todo-container {
@@ -95,29 +77,41 @@
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
+.checkmark-button:hover {
+    background-color: #45a049;
+    color: #fff;
+}
+
 .checkmark-button.completed {
     background-color: #4caf50;
     border-color: #6c6c6c;
     color: #fff;
 }
 
-.todo-item.completed .completion-details {
-    color: #6c6c6c;
-    font-style: italic;
-    margin-left: auto;
-    padding-right: 5px;
-}
-
 .completed {
     background-color: #c1e6c1;
 }
 
-.todo-item.completed {
-    color: #6c6c6c;
+.remove-item {
+    background-color: transparent;
+    border: 2px solid #6c6c6c;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.footer {
-    margin-top: 20px;
-    color: #777;
-    font-size: 14px;
+.remove-item:hover {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.item-text {
+    padding-left: 8px;
+    color: #000;
 }
