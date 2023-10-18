@@ -2,7 +2,7 @@
 
 Todoify is a simple web-based task management application built with React and Redux - created by Rob Reese. It empowers users to manage their tasks efficiently by adding, editing, marking as completed, and removing tasks from their to-do list.
 
-![Todoify Screenshot](/public/todoify.png)
+![Todoify Screenshot](/public/screenshot.png)
 
 ## Usage
 
