@@ -1,9 +1,15 @@
+/* --------------------------------------
+  CSS styles for the Todoify application
+----------------------------------------- */
+
+/* Styles for the main content container */
 .todo-content {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
+/* Styles for individual to-do items */
 .todo-item {
     display: flex;
     align-items: center;
@@ -15,10 +21,12 @@
     transition: background-color 0.2s ease;
 }
 
+/* Styles for to-do items on hover */
 .todo-item:hover {
     background-color: #e8e8e8;
 }
 
+/* Styles for completed to-do items */
 .todo-item.completed .completion-details {
     color: #6c6c6c;
     font-style: italic;
@@ -26,21 +34,25 @@
     padding-right: 5px;
 }
 
+/* Styles for the completed state */
 .todo-item.completed {
     color: #6c6c6c;
 }
 
+/* Styles for the "Add" button on hover */
 .add-todo-button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
 
+/* Styles for the container of the "Add" button and input field */
 .add-todo-container {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
+/* Styles for the input field for adding new to-do items */
 .add-todo-input {
     flex-grow: 1;
     padding: 10px;
@@ -50,6 +62,7 @@
     border: 1px solid #6c6c6c;
 }
 
+/* Styles for the "Add" button */
 .add-todo-button {
     background-color: #007bff;
     color: #fff;
@@ -62,6 +75,7 @@
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+/* Styles for the checkmark button */
 .checkmark-button {
     background-color: transparent;
     border: 2px solid #6c6c6c;
@@ -77,21 +91,25 @@
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
+/* Styles for the checkmark button on hover */
 .checkmark-button:hover {
     background-color: #45a049;
     color: #fff;
 }
 
+/* Styles for the completed checkmark button */
 .checkmark-button.completed {
     background-color: #4caf50;
     border-color: #6c6c6c;
     color: #fff;
 }
 
+/* Styles for the completed to-do item */
 .completed {
     background-color: #c1e6c1;
 }
 
+/* Styles for the remove item button */
 .remove-item {
     background-color: transparent;
     border: 2px solid #6c6c6c;
@@ -106,11 +124,13 @@
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
+/* Styles for the remove item button on hover */
 .remove-item:hover {
     background-color: #f44336;
     color: #fff;
 }
 
+/* Styles for the text of a to-do item */
 .item-text {
     padding-left: 8px;
     color: #000;

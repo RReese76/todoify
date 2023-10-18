@@ -9,7 +9,7 @@ function App() {
 
     return (
         <div className="App">
-            <img src={`${process.env.PUBLIC_URL}/todoify.png`} alt="App Icon" />
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="App Icon" />
             <p>Your ultimate task manager! Stay organized, productive, and never miss a beat with Todoify.
                 This powerful task manager and reminder app is your personal assistant for conquering your
                 to-do lists. Whether it's daily tasks, important deadlines, or life's little reminders,
